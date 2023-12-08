@@ -55,7 +55,9 @@ gender_options = ['Male', 'Female', 'Other', 'Don\'t know', 'Refused']
 gender = st.selectbox('Gender', options=gender_options, index=0)
 gender = gender_options.index(gender) + 1
 
+st.write(" ")  
 age = st.slider('Age', 18, 97, 18)
+st.write(" ")  
 
 # Predict button
 if st.button('Predict LinkedIn Usage'):
