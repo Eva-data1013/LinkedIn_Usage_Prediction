@@ -70,4 +70,4 @@ if st.button('Predict LinkedIn Usage'):
         prediction_probability = lr_model.predict_proba(processed_data)[0][1]  
         prediction_text = 'Uses LinkedIn' if prediction[0] == 1 else 'Does not use LinkedIn'
         st.write(f'Prediction: {prediction_text}')
-        st.write(f'Probability of using LinkedIn: {prediction_probability:.2f}%')
+        st.write(f'Probability of using LinkedIn: {prediction_probability * 100:.2f}%')
