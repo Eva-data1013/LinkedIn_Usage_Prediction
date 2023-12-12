@@ -31,7 +31,7 @@ income_options = [
     '40 to under $50,000', '50 to under $75,000', '75 to under $100,000', '100 to under $150,000',
     '$150,000 or more', 'Don\'t know', 'Refused'
 ]
-income = st.selectbox('Household Income:', options=income_options, index=0)
+income = st.selectbox('Income:', options=income_options, index=0)
 income = income_options.index(income) + 1  
 
 education_options = [
