@@ -6,7 +6,7 @@ import joblib
 # Load the trained logistic regression model
 lr_model = joblib.load('trained_lr_model.joblib')  # Update the path if needed
 
-# Function to clean data as per the provided script
+# Function to clean data
 def clean_sm(x):
     return np.where(x == 1, 1, 0)
 
