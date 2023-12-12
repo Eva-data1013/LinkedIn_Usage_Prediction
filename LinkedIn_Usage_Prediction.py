@@ -6,7 +6,7 @@ import joblib
 # Function to preprocess the input data
 lr_model = joblib.load('trained_lr_model.joblib')  
 
-# Function to clean data as per the provided script
+# Function to clean data
 def clean_sm(x):
     return np.where(x == 1, 1, 0)
 
